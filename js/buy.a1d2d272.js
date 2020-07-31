@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["buy"],{"54ec":function(n,u,e){"use strict";e.r(u);var l,c,o=e("2877"),p={},s=Object(o["a"])(p,l,c,!1,null,null,null);u["default"]=s.exports}}]);
+//# sourceMappingURL=buy.a1d2d272.js.map
