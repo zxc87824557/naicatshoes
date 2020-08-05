@@ -1,3 +1,6 @@
+# 鞋店網站
+https://zxc87824557.github.io/naicatshoes/
+
 # porduct
 
 ## Project setup
