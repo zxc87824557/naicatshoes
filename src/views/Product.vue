@@ -271,7 +271,7 @@ export default {
         { src: 'shoesimg/商標/nike-logo.png', brand: 'NIKE' },
         { src: 'shoesimg/商標/jordan-logo.png', brand: 'JORDAN' },
         { src: 'shoesimg/商標/adidas-logo.png', brand: 'ADIDAS' },
-        { src: 'shoesimg/商標/vans-logo.png', brand: 'VANS' },
+        { src: 'shoesimg/商標/Vans-logo.png', brand: 'VANS' },
         { src: 'shoesimg/商標/newbalance-logo.png', brand: 'NEWBALANCE' }
       ],
       sizes: [
