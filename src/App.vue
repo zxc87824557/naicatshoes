@@ -17,7 +17,10 @@
           b-nav-item.size(to='/size') 尺寸指南
           b-nav-item.size(to='/buy') 購買流程
           b-nav-item.size(to='/buyNeedToKnow') 購買須知
-          b-nav-item.size(v-if="account === 'zxc87824557'" to='/back') 後台管理
+          b-nav-item-dropdown.size(v-if="account === 'zxc87824557'" to='/back' text="後台管理")
+            b-dropdown-item(to="/back-user") 會員管理
+            b-dropdown-item(to="/back-product") 商品管理
+            b-dropdown-item(to="/back-cart") 購物車管理
           b-nav-item.size(to='/cart')
             font-awesome-icon.size(:icon="['fas', 'cart-plus']")
           b-nav-item.size(v-if="account.length==0" to='/login')
@@ -32,17 +35,22 @@
         b-nav-item(to='/size') 尺寸指南
         b-nav-item(to='/cart') 購物車
         b-nav-item(v-if="account.length==0" to='/login') 會員登入
-        b-nav-item(to='/back') 後台管理
+        b-nav-item-dropdown(v-if="account === 'zxc87824557'" to='/back' text="後台管理")
+          b-dropdown-item(to="/back-user") 會員管理
+          b-dropdown-item(to="/back-product") 商品管理
+          b-dropdown-item(to="/back-cart") 購物車管理
     vue-page-transition
       router-view
-    #footer
+    #footer.fixed-bottom
       div
         b-row.mx-0
           b-col.d-flex.justify-content-center.align-items-center.bgdark
             h5.textwhite.size 奶貓鞋店歡迎光臨
-            a(href="#")
+            a(href="https://line.me/ti/p/JJDMoqS73M")
               font-awesome-icon.size.textwhite.mx-2(:icon="['fab', 'line']")
+            a(href="https://www.facebook.com/profile.php?id=100002840724131")
               font-awesome-icon.size.textwhite.mx-2(:icon="['fab', 'facebook']")
+            a(href="https://www.instagram.com/zxc87824557/")
               font-awesome-icon.size.textwhite.mx-2(:icon="['fab', 'instagram']")
           b-col.d-flex.justify-content-center.align-items-center.bgdark
             h6.textwhite.size Copyright © 2020 Naicat All rights reserved
