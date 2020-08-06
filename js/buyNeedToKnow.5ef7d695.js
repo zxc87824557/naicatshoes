@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["buyNeedToKnow"],{"617e":function(t,e,n){"use strict";n.r(e);var o=function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{attrs:{id:"buyneedtoknow"}},[n("b-container",[n("b-row",[n("b-col",{staticClass:"d-flex justify-content-center"},[n("img",{attrs:{src:"shoesimg/needtoknow.png"}})])],1)],1)],1)},s=[],c={mounted:function(){this.$store.commit("boxshow")}},i=c,r=n("2877"),u=Object(r["a"])(i,o,s,!1,null,null,null);e["default"]=u.exports}}]);
+//# sourceMappingURL=buyNeedToKnow.5ef7d695.js.map

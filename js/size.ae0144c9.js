@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["size"],{e783:function(t,s,e){"use strict";e.r(s);var n=function(){var t=this,s=t.$createElement,e=t._self._c||s;return e("div",{attrs:{id:"size"}},[e("b-container",{staticClass:"mb-5"},[e("b-row",[e("b-col",{staticClass:"d-flex justify-content-center"},[e("img",{attrs:{src:"shoesimg/size.png"}})])],1)],1)],1)},i=[],o={mounted:function(){this.$store.commit("boxshow")}},c=o,r=e("2877"),a=Object(r["a"])(c,n,i,!1,null,null,null);s["default"]=a.exports}}]);
+//# sourceMappingURL=size.ae0144c9.js.map
