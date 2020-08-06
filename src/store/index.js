@@ -9,7 +9,8 @@ export default new Vuex.Store({
     user: '',
     account: '',
     name: '',
-    cart: []
+    cart: [],
+    boxshow: false
   },
   mutations: {
     login (state, data) {
@@ -26,6 +27,12 @@ export default new Vuex.Store({
     },
     logout (state, data) {
       state.account = ''
+    },
+    boxshow (state) {
+      state.boxshow = true
+      setTimeout(() => {
+        state.boxshow = false
+      }, 3000)
     }
   },
   getters: {
@@ -37,6 +44,9 @@ export default new Vuex.Store({
     },
     account (state) {
       return state.account
+    },
+    boxshow (state) {
+      return state.boxshow
     }
   },
   actions: {

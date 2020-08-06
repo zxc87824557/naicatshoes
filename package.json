@@ -28,6 +28,7 @@
     "vue-pswipe": "^0.15.0",
     "vue-router": "^3.2.0",
     "vue-sidebar-menu": "^4.6.2",
+    "vue-svg-draw": "^1.0.7",
     "vuejs-navbar": "^1.0.5",
     "vuesax": "^3.11.17",
     "vuex": "^3.4.0",

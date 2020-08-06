@@ -5,3 +5,11 @@
         b-col.d-flex.justify-content-center
           img(src="shoesimg/buy.jpg")
 </template>
+
+<script>
+export default {
+  mounted: function () {
+    this.$store.commit('boxshow')
+  }
+}
+</script>

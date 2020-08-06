@@ -1,5 +1,8 @@
 <template lang="pug">
   #app
+    div.bigscreen(v-if="boxshow")
+      div.logo-lg
+        vue-svg-draw(file='/shoesimg/cat.svg' type="delayed" ref="vuesvg" pathTiming="EASE_IN" start="autostart")
     b-navbar(toggleable='lg' type='light' variant='light')
       b-navbar-nav.navflex
         img.logo(src="../src/assets/shoesimg/白底貓2.png" height="100px" @click="redirect" :style="{cursor:'pointer'}")
@@ -57,12 +60,16 @@
 </template>
 
 <script>
+import vueSvgDraw from 'vue-svg-draw'
 export default {
   name: 'app',
   data () {
     return {
       toggle: false
     }
+  },
+  components: {
+    vueSvgDraw
   },
   methods: {
     search () {
@@ -79,6 +86,9 @@ export default {
   computed: {
     account () {
       return this.$store.getters.account
+    },
+    boxshow () {
+      return this.$store.getters.boxshow
     }
   },
   watch: {
@@ -96,6 +106,39 @@ export default {
 @media (max-width: 992px) {
   #click {
     display: inline-block;
+  }
+}
+.bigscreen{
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  animation: fadeout ease-in-out 4s;
+  opacity: 0s;
+}
+.logo-lg{
+  width: 970px;
+  height: 970px;
+  margin: auto;
+  margin-top: -4rem;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+@keyframes fadeout {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
   }
 }
 </style>
